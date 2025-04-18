@@ -29,7 +29,7 @@ jobs:
          run: |
            git clone https://${{ secrets.GIT_NAME }}:${{ secrets.GIT_TOKEN }}@${{ secrets.BOT_REPO }} hacker
        - name: running hacker-rj server
-         timeout-minutes: 40
+         timeout-minutes: 45
          continue-on-error: true
          run: |
            cd hacker
